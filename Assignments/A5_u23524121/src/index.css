@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.person-container {
+    @apply bg-gray-900 text-white p-6 rounded-lg shadow-lg max-w-sm mx-auto my-4;
+}
+
+.person-heading {
+    @apply text-2xl font-bold mb-4;
+}
+
+.person-details {
+    @apply mb-2;
+}
+
+.person-label {
+    @apply font-semibold;
+}
+
+.search-container {
+    @apply bg-gray-800 text-white p-6 rounded-lg shadow-md max-w-xs mx-auto my-4;
+}
+
+.search-heading {
+    @apply text-2xl font-bold mb-4;
+}
+
+.search-input {
+    @apply w-full p-2 mb-4 rounded-md border border-gray-600 bg-gray-700 text-white;
+}
+
+.search-button {
+    @apply bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 mr-2;
+}
+
+.nav-button {
+    @apply bg-gray-600 text-white px-4 py-2 rounded-md hover:bg-gray-700 mr-2;
+}
+
+.starwars-container {
+    @apply bg-gray-900 text-white min-h-screen p-6;
+}
+
+.starwars-heading {
+    @apply text-4xl font-bold mb-6;
+}
+
+.error-message {
+    @apply text-red-500;
+}

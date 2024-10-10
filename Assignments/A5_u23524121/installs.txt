@@ -1,0 +1,13 @@
+npm init
+npm install express
+npm install --save-dev @babel/cli @babel/core @babel/preset-env
+npm install react react-dom
+npm install --save-dev @babel/preset-react babel-loader webpack webpack-cli
+
+npm install -D tailwindcss //wasnt working I think?
+npx tailwindcss init 
+npm install tailwindcss
+npm i style-loader css-loader postcss-loader
+
+npx tailwindcss -i ./src/index.css -o ./public/output.css --watch //have this running in 1 terminal, then run npm start in another.
+                                                                  //nevermind, don't need to have 2 terminals running
