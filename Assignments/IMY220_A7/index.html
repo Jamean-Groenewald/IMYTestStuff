@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IMY 220 A7</title>
+  </head>
+  <body>
+    <h1>=== Todo List ===</h1>
+    <button onclick="{event.preventDefault(); sortTasksbyPriority();}">
+      Sort tasks by Priority
+    </button>
+    <input
+      type="text"
+      id="find"
+      name="find"
+      placeholder="Find a Task by id or name" />
+    <button onclick="{event.preventDefault(); findTask();}">Search</button>
+    <div
+      style="
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+      ">
+      <ul id="tasks"></ul>
+      <form id="taskForm">
+        <label for="task">Task</label>
+        <input
+          type="text"
+          id="task"
+          name="task"
+          placeholder="Enter a task"
+          required />
+        <br />
+        <br />
+        <label for="date">Due Date</label>
+        <input type="date" id="date" name="date" required />
+        <br />
+        <br />
+        <label for="category">Category</label>
+        <select id="category" name="category" required>
+          <option value="work">Work</option>
+          <option value="home">Personal</option>
+          <option value="hobby">Hobby</option>
+          <option value="other">Other</option>
+        </select>
+        <br />
+        <br />
+        <label for="priority">Priority (Low-High)</label>
+        <input
+          type="range"
+          id="priority"
+          name="priority"
+          min="1"
+          max="3"
+          marks="Low, Medium, High"
+          step="1"
+          required />
+        <br />
+        <br />
+        <label for="tags">Tags (optional)</label>
+        <input
+          type="text"
+          id="tags"
+          name="tags"
+          placeholder="Enter tags separated by commas" />
+        <br />
+        <br />
+        <label for="completed">Completed</label>
+        <input type="checkbox" id="completed" name="completed" />
+        <br />
+        <br />
+        <button onclick="{event.preventDefault(); addTask();}">Add Task</button>
+      </form>
+    </div>
+  </body>
+  <script src="index.js"></script>
+  <script>
+    const tm = new TaskManager();
+    function displayTasks() {
+      const tasksElement = document.getElementById("tasks");
+      let tasks = tm.listTasks();
+      tasksElement.innerHTML = "";
+      tasks.map((task) => {
+        const li = document.createElement("li");
+        li.innerHTML = task;
+        tasksElement.appendChild(li);
+      });
+    }
+    function addTask() {
+      const taskElement = document.getElementById("task");
+      const categoryElement = document.getElementById("category");
+      const dateElement = document.getElementById("date");
+      const priorityElement = document.getElementById("priority");
+      const tagsElement = document.getElementById("tags");
+      const completedElement = document.getElementById("completed");
+
+      const task = {
+        id: Math.floor(Math.random() * 1000),
+        name: taskElement.value,
+        category: categoryElement.value,
+        date: dateElement.value,
+        tags: tagsElement.value ? tagsElement.value.split(",") : undefined,
+        priority: parseInt(priorityElement.value),
+        completed: completedElement.checked,
+      };
+
+      tm.addTask(task);
+      displayTasks();
+    }
+    function findTask() {
+      const findElement = document.getElementById("find");
+      let input = findElement.value;
+      if(!isNaN(findElement.value)) {
+        input = parseInt(findElement.value);
+      }
+      const task = tm.findTask(input);
+      if (task) {
+        alert(`Task found: ${task.name}`);
+      } else {
+        alert("Task not found");
+      }
+    }
+    function sortTasksbyPriority() {
+      tm.sortTasksbyPriority();
+      displayTasks();
+    }
+    displayTasks();
+  </script>
+</html>

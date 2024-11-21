@@ -1,0 +1,3 @@
+docker-compose up --build
+
+docker exec -it imy220_a6-db-1 mongoimport --db IMY220A6 --collection posts --file /data/posts.json --jsonArray 

@@ -1,0 +1,126 @@
+[
+  {
+    "id": 1,
+    "title": "Classic Spaghetti Carbonara",
+    "description": "A rich and creamy Italian pasta dish made with eggs, cheese, pancetta, and pepper.",
+    "ingredients": [
+      "400g spaghetti",
+      "200g pancetta (or bacon)",
+      "2 large eggs",
+      "100g parmesan cheese (grated)",
+      "2 cloves garlic (optional)",
+      "Freshly ground black pepper",
+      "Salt",
+      "Olive oil"
+    ],
+    "instructions": [
+      "Boil a pot of salted water and cook the spaghetti according to package instructions until al dente.",
+      "While the pasta cooks, heat olive oil in a pan and sauté the pancetta until crispy. Add the garlic for extra flavor, then remove it once fragrant.",
+      "In a bowl, beat the eggs and mix in half the grated parmesan cheese.",
+      "Drain the pasta, saving a cup of the pasta water. Add the hot pasta to the pancetta pan, removing it from heat.",
+      "Quickly stir in the egg mixture, using the reserved pasta water to create a creamy sauce if needed.",
+      "Season with black pepper and mix in the remaining parmesan cheese.",
+      "Serve hot with extra cheese on top."
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Chicken Alfredo",
+    "description": "A comforting pasta dish with a creamy white sauce made from heavy cream, butter, and parmesan cheese, topped with grilled chicken.",
+    "ingredients": [
+      "2 boneless, skinless chicken breasts",
+      "250g fettuccine pasta",
+      "1 cup heavy cream",
+      "1/2 cup butter",
+      "1 cup parmesan cheese (grated)",
+      "2 cloves garlic (minced)",
+      "Salt and pepper",
+      "Olive oil"
+    ],
+    "instructions": [
+      "Season the chicken with salt and pepper, then grill or pan-sear until fully cooked. Slice and set aside.",
+      "Cook the fettuccine in salted water until al dente, then drain.",
+      "In a large pan, melt the butter and sauté the minced garlic until fragrant.",
+      "Pour in the heavy cream, stirring occasionally. Simmer on low for 5 minutes.",
+      "Gradually add the parmesan cheese, stirring until it melts and forms a creamy sauce.",
+      "Add the cooked pasta to the sauce and toss until fully coated.",
+      "Top with the sliced chicken and serve immediately."
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Vegetable Stir-Fry with Tofu",
+    "description": "A colorful, quick stir-fry with a mix of veggies and tofu, tossed in a savory-sweet sauce.",
+    "ingredients": [
+      "1 block firm tofu (pressed and cubed)",
+      "1 red bell pepper (sliced)",
+      "1 zucchini (sliced)",
+      "1 carrot (julienned)",
+      "1 broccoli head (cut into florets)",
+      "2 tablespoons soy sauce",
+      "1 tablespoon hoisin sauce",
+      "1 tablespoon sesame oil",
+      "2 cloves garlic (minced)",
+      "1 teaspoon fresh ginger (minced)",
+      "Cooked rice for serving"
+    ],
+    "instructions": [
+      "Heat sesame oil in a pan over medium-high heat and sauté the tofu until golden brown on all sides. Set aside.",
+      "In the same pan, add garlic and ginger, sauté until fragrant.",
+      "Add all the vegetables and stir-fry for 4-5 minutes until tender but crisp.",
+      "Stir in the soy sauce and hoisin sauce, cooking for another minute.",
+      "Toss the tofu back into the pan and mix everything together.",
+      "Serve hot over cooked rice."
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Beef Tacos",
+    "description": "Spiced ground beef served in warm taco shells with your favorite toppings for a quick and delicious meal.",
+    "ingredients": [
+      "500g ground beef",
+      "1 tablespoon taco seasoning",
+      "8 taco shells or tortillas",
+      "1 onion (diced)",
+      "1 tomato (diced)",
+      "1 cup lettuce (shredded)",
+      "1 cup cheddar cheese (shredded)",
+      "Sour cream and salsa (for serving)",
+      "Olive oil"
+    ],
+    "instructions": [
+      "Heat olive oil in a skillet over medium heat and sauté the diced onion until soft.",
+      "Add the ground beef and cook until browned. Drain excess fat.",
+      "Stir in the taco seasoning and a bit of water, simmering until the beef is well-coated and the sauce thickens.",
+      "Warm the taco shells or tortillas in the oven or on a stovetop.",
+      "Assemble the tacos by filling each shell with seasoned beef, and topping with lettuce, tomato, cheese, sour cream, and salsa.",
+      "Serve immediately."
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Chocolate Chip Cookies",
+    "description": "Soft, chewy chocolate chip cookies that are perfect for any sweet craving.",
+    "ingredients": [
+      "2 1/4 cups all-purpose flour",
+      "1/2 teaspoon baking soda",
+      "1 cup unsalted butter (room temperature)",
+      "1/2 cup granulated sugar",
+      "1 cup packed brown sugar",
+      "1 teaspoon salt",
+      "2 teaspoons vanilla extract",
+      "2 large eggs",
+      "2 cups chocolate chips"
+    ],
+    "instructions": [
+      "Preheat the oven to 350°F (175°C). Line a baking sheet with parchment paper.",
+      "In a small bowl, whisk together flour and baking soda; set aside.",
+      "In a large bowl, beat the butter, granulated sugar, brown sugar, and salt until fluffy.",
+      "Add the vanilla extract and eggs, one at a time, mixing well.",
+      "Gradually add the flour mixture, beating until just combined. Stir in the chocolate chips.",
+      "Drop rounded spoonfuls of dough onto the baking sheet.",
+      "Bake for 10-12 minutes or until golden brown around the edges.",
+      "Let the cookies cool before serving."
+    ]
+  }
+]

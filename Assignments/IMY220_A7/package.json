@@ -1,0 +1,20 @@
+{
+  "name": "imy220_a7",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc --noEmitOnError index.ts",
+    "start": "npm run build && node index.js"
+  },
+  "author": "u23524121 Jamean Groenewald",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^22.7.5",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "express": "^4.21.1",
+    "path": "^0.12.7"
+  }
+}

@@ -1,0 +1,33 @@
+#u23524121 Jamean Groenewald
+
+version: '3.8'
+
+services:
+  db:
+    image: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db  
+    networks:
+      - app-network
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000" 
+    depends_on:
+      - db  
+    environment:
+      - MONGO_URL=mongodb://db:27017/IMY220A6
+    networks:
+      - app-network
+
+volumes:
+  mongo-data: 
+
+networks:
+  app-network:
+    driver: bridge
