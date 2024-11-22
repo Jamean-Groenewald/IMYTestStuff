@@ -28,6 +28,10 @@ class Line extends React.Component
         return length;
     }
 
+    //static propTypes = {
+    //  updatePoints: propTypes.func.isRequired
+    //}
+    
     render()
     {
         return(
